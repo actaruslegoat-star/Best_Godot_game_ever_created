@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bl72o2bw4aqwf"]
+
+[ext_resource type="Texture2D" uid="uid://g6th0okwplsm" path="res://roue.png" id="1_8m8ww"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hqns4"]
+radius = 45.099888
+
+[node name="RigidBody2D" type="RigidBody2D" unique_id=1184468967]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1991181754]
+shape = SubResource("CircleShape2D_hqns4")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=143562090]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_8m8ww")

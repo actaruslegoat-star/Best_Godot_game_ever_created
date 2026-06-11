@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cjhfo5j2bpndl"]
+
+[ext_resource type="Texture2D" uid="uid://dwikbo1k7x4dl" path="res://background_pipe.webp" id="1_rlmtt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ta5nu"]
+size = Vector2(29.25, 108.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_flf07"]
+size = Vector2(577, 192)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jln82"]
+size = Vector2(251, 119)
+
+[node name="background_pipe" type="StaticBody2D" unique_id=862184068]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=759628563]
+scale = Vector2(4, 4)
+texture = ExtResource("1_rlmtt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=665085795]
+position = Vector2(224.5, 27)
+scale = Vector2(4, 4)
+shape = SubResource("RectangleShape2D_ta5nu")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1231626917]
+position = Vector2(7.5, 153)
+shape = SubResource("RectangleShape2D_flf07")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="." unique_id=1694364369]
+position = Vector2(-160.5, -4.5)
+shape = SubResource("RectangleShape2D_jln82")

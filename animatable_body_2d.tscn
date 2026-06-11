@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c8vwsr563n0y2"]
+
+[ext_resource type="Texture2D" uid="uid://g6th0okwplsm" path="res://roue.png" id="1_s2ghs"]
+[ext_resource type="Script" uid="uid://dldawbgkmbeyj" path="res://wheel.gd" id="1_v7f7r"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_v7f7r"]
+radius = 90.13877
+
+[node name="wheel" type="AnimatableBody2D" unique_id=1883745009]
+script = ExtResource("1_v7f7r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=3360849]
+shape = SubResource("CircleShape2D_v7f7r")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1562151207]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_s2ghs")

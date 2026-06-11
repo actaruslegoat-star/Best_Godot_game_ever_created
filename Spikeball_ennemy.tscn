@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://7dy3awu1ipo0"]
+
+[ext_resource type="Texture2D" uid="uid://djlglmkl4r1n5" path="res://spike.png" id="1_hlwqt"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_aqitt"]
+radius = 60.207973
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hlwqt"]
+radius = 59.5399
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rrcsr"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rdskl"]
+
+[node name="CharacterBody2D2" type="CharacterBody2D" unique_id=326962169]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1769811944]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_hlwqt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=260784697]
+shape = SubResource("CircleShape2D_aqitt")
+disabled = true
+
+[node name="Area2D" type="Area2D" parent="." unique_id=806100668]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1049597186]
+shape = SubResource("CircleShape2D_hlwqt")
+
+[node name="enter_area" type="Area2D" parent="." unique_id=260721706]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enter_area" unique_id=858030537]
+scale = Vector2(25, 25)
+shape = SubResource("CircleShape2D_rrcsr")
+
+[node name="exit_area" type="Area2D" parent="." unique_id=556249221]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="exit_area" unique_id=1809263499]
+scale = Vector2(70, 70)
+shape = SubResource("CircleShape2D_rdskl")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="enter_area" to="." method="_on_enter_area_body_entered"]
+[connection signal="body_exited" from="exit_area" to="." method="_on_exit_area_body_exited"]

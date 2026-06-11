@@ -1,0 +1,223 @@
+[gd_scene format=3 uid="uid://dppiigvjwhkiu"]
+
+[ext_resource type="PackedScene" uid="uid://ccm6d2eg6m416" path="res://Player.tscn" id="1_hqns4"]
+[ext_resource type="PackedScene" uid="uid://rfw37s51p454" path="res://wall.tscn" id="3_epypp"]
+[ext_resource type="Script" uid="uid://hlbns76yk8wt" path="res://area_2d.gd" id="4_0hol4"]
+[ext_resource type="Script" uid="uid://dsgssrhysraop" path="res://area_2d_2.gd" id="6_d21ai"]
+[ext_resource type="PackedScene" uid="uid://jlfo5s3oohw6" path="res://aile.tscn" id="6_kdubu"]
+[ext_resource type="PackedScene" uid="uid://oyvcblhujew4" path="res://Spike.tscn" id="7_d21ai"]
+[ext_resource type="Script" uid="uid://reb6yvyvtq3v" path="res://spike.gd" id="8_rj586"]
+[ext_resource type="Texture2D" uid="uid://ctvocppsv0m4d" path="res://other-danger-sign-illustration-transparent-png.webp" id="9_4d7sh"]
+[ext_resource type="PackedScene" uid="uid://bl72o2bw4aqwf" path="res://wheel.tscn" id="10_ir8iy"]
+[ext_resource type="PackedScene" uid="uid://dvly8nckvvrhv" path="res://Bridge.tscn" id="11_hqns4"]
+[ext_resource type="PackedScene" uid="uid://7dy3awu1ipo0" path="res://Spikeball_ennemy.tscn" id="12_0h7mo"]
+[ext_resource type="Script" uid="uid://bgam385p00uul" path="res://button.gd" id="12_x0ka3"]
+[ext_resource type="PackedScene" uid="uid://t587e2sswvdj" path="res://ennemy.tscn" id="13_0h7mo"]
+[ext_resource type="PackedScene" uid="uid://cjhfo5j2bpndl" path="res://background_pipe.tscn" id="15_d2bti"]
+[ext_resource type="PackedScene" uid="uid://y3tyygmm5om1" path="res://background_bush.tscn" id="16_ta5nu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q6r6c"]
+size = Vector2(9620, 178)
+
+[node name="Node2D" type="Node2D" unique_id=404285164]
+
+[node name="CharacterBody2D" parent="." unique_id=1175669530 instance=ExtResource("1_hqns4")]
+position = Vector2(3876, -103)
+
+[node name="StaticBody2D2" parent="." unique_id=521699519 instance=ExtResource("3_epypp")]
+position = Vector2(316, 437)
+
+[node name="StaticBody2D3" parent="." unique_id=2105696485 instance=ExtResource("3_epypp")]
+position = Vector2(679, 437)
+
+[node name="StaticBody2D4" parent="." unique_id=634668095 instance=ExtResource("3_epypp")]
+position = Vector2(1042, 437)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=215165201]
+script = ExtResource("4_0hol4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=593967559]
+position = Vector2(2544, 1153)
+shape = SubResource("RectangleShape2D_q6r6c")
+
+[node name="StaticBody2D" parent="Area2D" unique_id=927973735 instance=ExtResource("3_epypp")]
+position = Vector2(3558, 431)
+
+[node name="StaticBody2D2" parent="Area2D" unique_id=8494183 instance=ExtResource("3_epypp")]
+position = Vector2(3558, 672)
+
+[node name="StaticBody2D3" parent="Area2D" unique_id=1875877369 instance=ExtResource("3_epypp")]
+position = Vector2(2643.0002, 911)
+
+[node name="StaticBody2D4" parent="Area2D" unique_id=1175973076 instance=ExtResource("3_epypp")]
+position = Vector2(2643, 1153)
+
+[node name="StaticBody2D5" parent="Area2D" unique_id=1678239301 instance=ExtResource("3_epypp")]
+position = Vector2(2643, 1391)
+
+[node name="StaticBody2D6" parent="Area2D" unique_id=196177121 instance=ExtResource("3_epypp")]
+position = Vector2(2643, 1629)
+
+[node name="StaticBody2D7" parent="Area2D" unique_id=1448960915 instance=ExtResource("3_epypp")]
+position = Vector2(3561, 911)
+
+[node name="StaticBody2D8" parent="Area2D" unique_id=1863351096 instance=ExtResource("3_epypp")]
+position = Vector2(3564, 1146)
+
+[node name="StaticBody2D9" parent="Area2D" unique_id=154080270 instance=ExtResource("3_epypp")]
+position = Vector2(3564, 1370)
+
+[node name="StaticBody2D10" parent="Area2D" unique_id=192397288 instance=ExtResource("3_epypp")]
+position = Vector2(3564, 1598)
+
+[node name="StaticBody2D11" parent="Area2D" unique_id=743481921 instance=ExtResource("3_epypp")]
+position = Vector2(3564, 1843)
+
+[node name="StaticBody2D12" parent="Area2D" unique_id=1464509933 instance=ExtResource("3_epypp")]
+position = Vector2(2329, 929)
+
+[node name="StaticBody2D13" parent="Area2D" unique_id=1275938786 instance=ExtResource("3_epypp")]
+position = Vector2(2317, 1155)
+
+[node name="StaticBody2D14" parent="Area2D" unique_id=304696699 instance=ExtResource("3_epypp")]
+position = Vector2(2317, 1394)
+
+[node name="StaticBody2D15" parent="Area2D" unique_id=1334973289 instance=ExtResource("3_epypp")]
+position = Vector2(2323, 1638)
+
+[node name="StaticBody2D16" parent="Area2D" unique_id=2051262304 instance=ExtResource("3_epypp")]
+position = Vector2(3913, 427)
+
+[node name="StaticBody2D17" parent="Area2D" unique_id=623519878 instance=ExtResource("3_epypp")]
+position = Vector2(3919, 672)
+
+[node name="StaticBody2D18" parent="Area2D" unique_id=2127292260 instance=ExtResource("3_epypp")]
+position = Vector2(3913, 916)
+
+[node name="StaticBody2D19" parent="Area2D" unique_id=858913500 instance=ExtResource("3_epypp")]
+position = Vector2(3919, 1161)
+
+[node name="StaticBody2D20" parent="Area2D" unique_id=1645348081 instance=ExtResource("3_epypp")]
+position = Vector2(3925, 1381)
+
+[node name="StaticBody2D21" parent="Area2D" unique_id=1056099494 instance=ExtResource("3_epypp")]
+position = Vector2(3919, 1620)
+
+[node name="StaticBody2D22" parent="Area2D" unique_id=1504099414 instance=ExtResource("3_epypp")]
+position = Vector2(3919, 1846)
+
+[node name="StaticBody2D7" parent="." unique_id=20625587 instance=ExtResource("6_kdubu")]
+position = Vector2(4677, 252)
+
+[node name="StaticBody2D" parent="." unique_id=91514717 instance=ExtResource("3_epypp")]
+position = Vector2(-46, 437)
+
+[node name="StaticBody2D5" parent="." unique_id=1757502572 instance=ExtResource("3_epypp")]
+position = Vector2(-408, 435)
+
+[node name="StaticBody2D6" parent="." unique_id=1118304349 instance=ExtResource("3_epypp")]
+position = Vector2(-410, 193)
+
+[node name="StaticBody2D8" parent="." unique_id=1734683085 instance=ExtResource("3_epypp")]
+position = Vector2(-410, -49)
+
+[node name="StaticBody2D9" parent="." unique_id=144842083 instance=ExtResource("3_epypp")]
+position = Vector2(1406, 437)
+
+[node name="Area2D2" type="Area2D" parent="." unique_id=1919710776]
+position = Vector2(1368, 0)
+script = ExtResource("6_d21ai")
+
+[node name="CollisionShape2D" parent="Area2D2" unique_id=919743776 instance=ExtResource("7_d21ai")]
+position = Vector2(165.5, 294.5)
+script = ExtResource("8_rj586")
+
+[node name="StaticBody2D" parent="Area2D2" unique_id=1518693904 instance=ExtResource("3_epypp")]
+position = Vector2(393, 438)
+
+[node name="StaticBody2D2" parent="Area2D2" unique_id=1045592511 instance=ExtResource("3_epypp")]
+position = Vector2(912, 437)
+
+[node name="StaticBody2D3" parent="Area2D2" unique_id=971961748 instance=ExtResource("3_epypp")]
+position = Vector2(394, 676)
+
+[node name="StaticBody2D4" parent="Area2D2" unique_id=213075280 instance=ExtResource("3_epypp")]
+position = Vector2(935, 682)
+
+[node name="StaticBody2D5" parent="Area2D2" unique_id=1489699187 instance=ExtResource("3_epypp")]
+position = Vector2(662, 682)
+
+[node name="CollisionShape2D2" parent="Area2D2" unique_id=878080116 instance=ExtResource("7_d21ai")]
+position = Vector2(653, 536)
+
+[node name="StaticBody2D6" parent="Area2D2" unique_id=101512135 instance=ExtResource("3_epypp")]
+position = Vector2(38, 677)
+
+[node name="StaticBody2D7" parent="Area2D2" unique_id=1108698658 instance=ExtResource("3_epypp")]
+position = Vector2(1275, 672)
+
+[node name="StaticBody2D8" parent="Area2D2" unique_id=722778661 instance=ExtResource("3_epypp")]
+position = Vector2(1277, 437)
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=884670573]
+offset_left = -1.0
+offset_top = 5.0
+offset_right = 328.0
+offset_bottom = 163.0
+text = "Q = Left 
+D = Right
+Space = Jump
+
+the wing is a lie"
+editable = false
+
+[node name="StaticBody2D10" parent="." unique_id=1409471982 instance=ExtResource("3_epypp")]
+position = Vector2(-770.00006, 439)
+
+[node name="StaticBody2D11" parent="." unique_id=546096357 instance=ExtResource("3_epypp")]
+position = Vector2(-764, 204)
+
+[node name="StaticBody2D12" parent="." unique_id=955330167 instance=ExtResource("3_epypp")]
+position = Vector2(-759, -37)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=451121177]
+position = Vector2(1531, 135.99997)
+scale = Vector2(0.11999984, 0.12241286)
+texture = ExtResource("9_4d7sh")
+
+[node name="RigidBody2D" parent="." unique_id=1184468967 instance=ExtResource("10_ir8iy")]
+position = Vector2(479, 130)
+
+[node name="RigidBody2D2" parent="." unique_id=1774474918 instance=ExtResource("10_ir8iy")]
+position = Vector2(576, 219)
+mass = 0.635
+
+[node name="AnimatableBody2D" parent="." unique_id=1170480252 instance=ExtResource("11_hqns4")]
+position = Vector2(2841, 317)
+
+[node name="Button" type="Button" parent="." unique_id=1584508637 node_paths=PackedStringArray("target")]
+offset_left = 2595.0
+offset_top = 88.0
+offset_right = 2663.0
+offset_bottom = 140.0
+focus_mode = 0
+text = "0p3n"
+script = ExtResource("12_x0ka3")
+target = NodePath("../AnimatableBody2D")
+
+[node name="SpikeBall" parent="." unique_id=326962169 instance=ExtResource("12_0h7mo")]
+visible = false
+position = Vector2(270, 235)
+
+[node name="CharacterBody2D2" parent="." unique_id=161941245 instance=ExtResource("13_0h7mo")]
+position = Vector2(4934, -197)
+
+[node name="background_pipe" parent="." unique_id=862184068 instance=ExtResource("15_d2bti")]
+position = Vector2(5088, 288)
+
+[node name="background_bush" parent="." unique_id=1265521002 instance=ExtResource("16_ta5nu")]
+position = Vector2(4426, 226)
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
