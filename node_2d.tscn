@@ -14,6 +14,7 @@
 [ext_resource type="Script" uid="uid://bgam385p00uul" path="res://button.gd" id="12_x0ka3"]
 [ext_resource type="PackedScene" uid="uid://t587e2sswvdj" path="res://ennemy.tscn" id="13_0h7mo"]
 [ext_resource type="PackedScene" uid="uid://cjhfo5j2bpndl" path="res://background_pipe.tscn" id="15_d2bti"]
+[ext_resource type="Texture2D" uid="uid://7obc6lru10qd" path="res://bold-yellow-numbers-67-white-600w-2697852337.webp" id="16_flf07"]
 [ext_resource type="PackedScene" uid="uid://y3tyygmm5om1" path="res://background_bush.tscn" id="16_ta5nu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q6r6c"]
@@ -217,6 +218,10 @@ position = Vector2(5088, 288)
 
 [node name="background_bush" parent="." unique_id=1265521002 instance=ExtResource("16_ta5nu")]
 position = Vector2(4426, 226)
+
+[node name="BoldYellowNumbers67White600w2697852337" type="Sprite2D" parent="." unique_id=3083232]
+position = Vector2(876, -156)
+texture = ExtResource("16_flf07")
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]
